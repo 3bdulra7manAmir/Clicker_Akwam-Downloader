@@ -17,7 +17,7 @@ import emoji
 
 pyautogui.FAILSAFE = True
 ender = True
-counter = 20
+counter = 1
 
 
 def downloader():
@@ -33,13 +33,13 @@ def downloader():
         time.sleep(7)
 
         # Click Here Btn
-        mouse.move(x=1220, y=375)
+        mouse.move(x=1216, y=830)
         mouse.click("left")
 
         time.sleep(7)
 
         # Download Btn
-        mouse.move(x=955, y=540)
+        mouse.move(x=955, y=915)
         mouse.click("left")
 
         time.sleep(10)
