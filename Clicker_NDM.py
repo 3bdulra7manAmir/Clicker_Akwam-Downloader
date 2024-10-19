@@ -2,6 +2,7 @@ import time
 import mouse
 import keyboard
 import pyautogui
+from playsound import playsound  # Add this for playing sound
 import emoji
 # emoji_text = emoji.emojize(":winking_face:")
 # emoji_text_ghost = emoji.emojize(":ghost:")
@@ -59,6 +60,7 @@ def downloader():
         counter = counter - 1
         if counter == 0:
             ender = False
+            playsound('assets/sound/alert.mp3')  # Plays a sound when aborting
             break
 
 

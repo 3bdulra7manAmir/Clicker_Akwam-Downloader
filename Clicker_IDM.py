@@ -3,6 +3,8 @@ import mouse
 import keyboard
 import pyautogui
 import emoji
+from playsound import playsound
+
 # emoji_text = emoji.emojize(":winking_face:")
 # emoji_text_ghost = emoji.emojize(":ghost:")
 
@@ -76,6 +78,7 @@ def downloader():
         counter = counter - 1
         if counter == 0:
             ender = False
+            playsound('assets/sound/alert.mp3')  # Plays a sound when aborting
             break
 
 
